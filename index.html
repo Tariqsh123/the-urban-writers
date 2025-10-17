@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Urban Writers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-left">
+      <div class="logo">
+        <img src="https://theurbanwriters.com/cdn/shop/files/Dibbly-TheUrbanWriters-LogoLockUp-Circle-1500px_500x.png?v=1704893665" alt="Dibbly Logo">
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#">How It Works</a></li>
+        <li><a href="#">Features</a></li>
+
+        <!-- Services dropdown -->
+        <li class="dropdown">
+          <a href="#">Services ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Fiction Packages</a></li>
+            <li><a href="#">Content Translation</a></li>
+            <li><a href="#">SEO Articles</a></li>
+            <li><a href="#">Editing</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+
+        <!-- Let's Chat dropdown -->
+        <li class="dropdown">
+          <a href="#">Let's Chat ▾</a>
+          <ul class="dropdown-menu small">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Freelancer Opportunities</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Affiliates</a></li>
+      </ul>
+    </div>
+
+    <div class="menu-toggle" id="mobile-menu" aria-label="Toggle menu" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <div class="nav-right">
+      <a href="#" class="book-demo">Book A Demo</a>
+      <a href="#" class="login">Login</a>
+      <button class="post-project">POST YOUR PROJECT</button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenuPanel" aria-hidden="true">
+    <ul>
+      <li><a href="#">How It Works</a></li>
+      <li><a href="#">Features</a></li>
+
+      <li class="mobile-dropdown">
+        <a href="#">Services</a>
+        <ul>
+          <li><a href="#">Fiction Packages</a></li>
+          <li><a href="#">Content Translation</a></li>
+          <li><a href="#">SEO Articles</a></li>
+          <li><a href="#">Editing</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">About</a></li>
+
+      <li class="mobile-dropdown">
+        <a href="#">Let's Chat</a>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Freelancer Opportunities</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Affiliates</a></li>
+    </ul>
+
+    <div class="mobile-right">
+      <a href="#" class="book-demo">Book A Demo</a>
+      <a href="#" class="login">Login</a>
+      <button class="post-project">POST YOUR PROJECT</button>
+    </div>
+  </div>
+
+  <script>
+    const hamburger = document.getElementById('mobile-menu');
+    const mobilePanel = document.getElementById('mobileMenuPanel');
+
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!expanded));
+      mobilePanel.classList.toggle('active');
+      mobilePanel.setAttribute('aria-hidden', String(expanded));
+      hamburger.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.mobile-dropdown > a').forEach(dropLink => {
+      dropLink.addEventListener('click', e => {
+        e.preventDefault();
+        const parent = dropLink.parentElement;
+        parent.classList.toggle('active');
+      });
+    });
+  </script>
+
+  <!-- Hero Section -->
+   <section class="hero">
+  <div class="hero-container">
+    <div class="hero-left">
+      <h1>We Write, You Win. Fast Track Your Bestseller Success.</h1>
+      <p>
+        Choose from over 5,000 vetted creative minds excelling in everything from
+        books to articles, cover designs to SEO. Join 20,000 happy customers.
+      </p>
+      <a href="#" class="cta-btn">Post Your Project Now</a>
+    </div>
+    <div class="hero-right">
+      <img
+        src="https://theurbanwriters.com/cdn/shop/files/Group_2842_070d09f8-a894-47dd-abeb-3dc4ce44e31f.png?v=1646217935"
+        alt="Writers Team"
+      />
+    </div>
+  </div>
+</section>
+
+<section class="what-we-can-create-heading-container">
+  <h2>What We Can Create Together</h2>
+  <h3>Our Works</h3>
+</section>
+<div class="what-we-can-create-card-container">
+  <div class="what-we-can-create-card-inner-container">
+    
+     
+  <!-- 1 -->
+  <div class="what-we-can-create-card">
+    <div class="what-we-can-create-card-img-container">
+      <img src="https://img.icons8.com/?size=100&id=3649&format=png&color=000000" alt="Book Bundles Icon">
+    </div>
+    <div class="what-we-can-create-card-text-container">
+      <h4>Book Bundles</h4>
+      <p>Check out our cover to cover manuscript bundles!</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="what-we-can-create-card">
+    <div class="what-we-can-create-card-img-container">
+      <img src="https://img.icons8.com/?size=100&id=35088&format=png&color=000000" alt="Cover Design Icon">
+    </div>
+    <div class="what-we-can-create-card-text-container">
+      <h4>Cover Design</h4>
+      <p>The extraordinary book covers that appeal to your readers</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="what-we-can-create-card">
+    <div class="what-we-can-create-card-img-container">
+      <img src="https://img.icons8.com/?size=100&id=SOSsf64BLnDT&format=png&color=000000" alt="Nonfiction Book Writing Icon">
+    </div>
+    <div class="what-we-can-create-card-text-container">
+      <h4>Nonfiction Book Writing</h4>
+      <p>Writing packages and bundles to meet every need</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="what-we-can-create-card">
+    <div class="what-we-can-create-card-img-container">
+      <img src="https://img.icons8.com/?size=100&id=t5GRNS5yIsHP&format=png&color=000000" alt="Fiction Book Writing Icon">
+    </div>
+    <div class="what-we-can-create-card-text-container">
+      <h4>Fiction Book Writing</h4>
+      <p>Your ideas brought to life as a story readers will love</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="what-we-can-create-card">
+    <div class="what-we-can-create-card-img-container">
+      <img src="https://img.icons8.com/?size=100&id=10728&format=png&color=000000" alt="Content Translation Icon">
+    </div>
+    <div class="what-we-can-create-card-text-container">
+      <h4>Content Translation</h4>
+      <p>Reach new markets with flawless translations from English to Spanish and German</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="what-we-can-create-card">
+    <div class="what-we-can-create-card-img-container">
+      <img src="https://img.icons8.com/?size=100&id=D7ZPV00T4bJv&format=png&color=000000" alt="SEO Icon">
+    </div>
+    <div class="what-we-can-create-card-text-container">
+      <h4>SEO</h4>
+      <p>Expertly researched, high-quality, and effective written SEO content</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+  <!-- 7 -->
+  <div class="what-we-can-create-card">
+    <div class="what-we-can-create-card-img-container">
+      <img src="https://img.icons8.com/?size=100&id=57465&format=png&color=000000" alt="Editing Services Icon">
+    </div>
+    <div class="what-we-can-create-card-text-container">
+      <h4>Editing Services</h4>
+      <p>You write, our professional editors polish and perfect</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+  <!-- 8 -->
+  <div class="what-we-can-create-card">
+    <div class="what-we-can-create-card-img-container">
+      <img src="https://img.icons8.com/?size=100&id=49166&format=png&color=000000" alt="Illustrations Icon">
+    </div>
+    <div class="what-we-can-create-card-text-container">
+      <h4>Illustrations</h4>
+      <p>Our diverse team of illustrators create custom artwork for a variety of uses</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+  <!-- 9 -->
+  <div class="what-we-can-create-card">
+    <div class="what-we-can-create-card-img-container">
+      <img src="https://img.icons8.com/?size=100&id=REr107sunZKc&format=png&color=000000" alt="Professional Book Descriptions Icon">
+    </div>
+    <div class="what-we-can-create-card-text-container">
+      <h4>Professional Book Descriptions</h4>
+      <p>We can help your book stand out and catch your readers’ eyes</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+  <!-- end -->
+  
+  </div>
+</div>
+</body>
+</html>
