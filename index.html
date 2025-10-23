@@ -15,8 +15,8 @@
       </div>
 
       <ul class="nav-links">
-        <li><a href="#">How It Works</a></li>
-        <li><a href="#">Features</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
 
         <!-- Services dropdown -->
         <li class="dropdown">
@@ -29,19 +29,20 @@
           </ul>
         </li>
 
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Testimonials</a></li>
 
         <!-- Let's Chat dropdown -->
-        <li class="dropdown">
+        <!-- <li class="dropdown">
           <a href="#">Let's Chat ▾</a>
           <ul class="dropdown-menu small">
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Freelancer Opportunities</a></li>
           </ul>
-        </li>
+        </li> -->
 
-        <li><a href="#">Affiliates</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Sales</a></li>
       </ul>
     </div>
 
@@ -52,9 +53,9 @@
     </div>
 
     <div class="nav-right">
-      <a href="#" class="book-demo">Book A Demo</a>
-      <a href="#" class="login">Login</a>
-      <button class="post-project">POST YOUR PROJECT</button>
+      <!-- <a href="#" class="book-demo">Book A Demo</a>
+      <a href="#" class="login">Login</a> -->
+      <button class="post-project">Post Your Project</button>
     </div>
   </nav>
 
@@ -674,9 +675,107 @@ $(function(){
 });
 </script>
 
+<!-- Faq Section -->
+  <div class="faq-container">
+    <div class="faq-header">
+      <h1>Frequently Asked Questions</h1>
+      <p>Find answers about publishing with The Urban Writers.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What services do you offer?</span>
+        <span class="icon">▼</span>
+      </div>
+      <div class="faq-answer">
+        We offer editing, design, typesetting, publishing, and marketing solutions tailored for authors to bring their books to life professionally.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>How long does the publishing process take?</span>
+        <span class="icon">▼</span>
+      </div>
+      <div class="faq-answer">
+        Most projects take between 4–12 weeks depending on the service package and author feedback speed.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Do I keep my book rights?</span>
+        <span class="icon">▼</span>
+      </div>
+      <div class="faq-answer">
+        Yes. You retain 100% ownership of your work. The Urban Writers simply helps you prepare and publish it professionally.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Can I choose my own cover design?</span>
+        <span class="icon">▼</span>
+      </div>
+      <div class="faq-answer">
+        Absolutely! Our design team collaborates with you to create a cover that reflects your story and appeals to your target readers.
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+<!-- Faq Section -->
+ 
+ <!-- Contact Form -->
+    <div class="form-container">
+    <div class="form-header">
+      <h1>Go ahead - we dare you!</h1>
+      <p>Send a sample of your book and get a free trial edit from several of our amazing editors. You don't pay until you're happy. Please include as much information as possible: (genre | budget or service level | estimated length)</p>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Enter your Full Name" required>
+      <input type="email" placeholder="Enter Your Email" required>
+      <input type="tel" placeholder="Enter Your Phone No." required>
+      <select required>
+        <option value="">Select Country</option>
+        <option value="uae">UAE</option>
+        <option value="oman">Oman</option>
+        <option value="saudi">Saudi Arabia</option>
+        <option value="qatar">Qatar</option>
+        <option value="kuwait">Kuwait</option>
+        <option value="bahrain">Bahrain</option>
+      </select>
+      <select required>
+        <option value="">Select Genre</option>
+        <option value="fiction">Fiction</option>
+        <option value="non-fiction">Non-Fiction</option>
+        <option value="academic">Academic</option>
+        <option value="biography">Biography</option>
+        <option value="children">Children’s Book</option>
+      </select>
+      <input type="file">
+      <input type="text" placeholder="Write Your Book Title" required class="full">
+      <textarea placeholder="Details" class="full"></textarea>
+
+      <button type="submit" class="cta-btn full">Submit</button>
+    </form>
+  </div>
+
+ <!-- Contact Form -->
+
 <!-- Footer -->
 
-<!-- Main Footer -->
 <footer class="app-footer">
     
     <!-- Footer Top: 4 Columns -->
