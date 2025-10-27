@@ -1485,7 +1485,9 @@ nav {
   width: auto;
   max-width: 100%;
 }
-
+.social-icons{
+  display: flex;
+}
 .social-icons a {
   margin-right: 15px;
   color: #fff;
