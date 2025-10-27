@@ -109,6 +109,9 @@ nav {
   font-weight: 700;
   font-size: 13px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all 0.2s;
   height: 100%;
 }

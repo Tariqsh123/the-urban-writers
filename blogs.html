@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | The Urban Writers</title>
+  <title>Blogs | The Urban Writers</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="contact-us.css">
+  <link rel="stylesheet" href="blogs.css">
    <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -136,58 +136,82 @@
     });
   </script>
 
- 
- <!-- Contact Form -->
-
-
-<div class="form-section">
-  <div class="form-image">
-    <img src="images/book-editing-above-footer-image.webp" alt="book-editing-above-footer-image" title="book-editing-above-footer-image" loading="lazy">
-  </div>
-  <div class="form-container">
-    <div class="form-header">
-      <h1>Go ahead - we dare you!</h1>
-      <p>
-        Send a sample of your book and get a free trial edit from several of our amazing editors. 
-        You don't pay until you're happy. Please include as much information as possible: 
-        (genre | budget or service level | estimated length)
-      </p>
-    </div>
-
-    <form>
-      <div class="left-column">
-        <input type="text" placeholder="Enter your Full Name" required>
-        <input type="email" placeholder="Enter Your Email" required>
-        <input type="tel" placeholder="Enter Your Phone No." required>
-        <input type="text" placeholder="Write Your Book Title" required>
-      </div>
-
-      <div class="right-column">
-        <textarea placeholder="Details" required></textarea>
-      </div>
-
-      <select required class="full">
-        <option value="">Select Genre</option>
-        <option value="fiction">Fiction</option>
-        <option value="non-fiction">Non-Fiction</option>
-        <option value="academic">Academic</option>
-        <option value="biography">Biography</option>
-        <option value="children">Children’s Book</option>
-      </select>
-
-      <input type="file" class="full">
-
-      <button type="submit" class="cta-btn full">Submit</button>
-    </form>
-  </div>
+  
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-container">
+    <!-- Left Side -->
+    <div class="hero-left">
+  <h1>Turn Your Ideas into Page-Turning Masterpieces.</h1>
+  <p>
+    Collaborate with top-tier writers, designers, and editors to bring your story to life. 
+    Join thousands of authors who’ve achieved publishing success.
+  </p>
+  <a href="contact-us.html" title="contact-us" class="cta-btn">Get Started Today</a>
 </div>
 
 
- <!-- Contact Form -->
+    <!-- Right Side (Form Section) -->
+    <div class="hero-right">
+      <div class="form-box">
+        <h2>The Best Book Publisher</h2>
+        <h3>Your Partner in Professional Book Publishing Journey</h3>
+        <p class="sub-heading">Sign up and Claim $100 Reward now</p>
+
+        <form action="#">
+          <label for="manuscript">Do You Have a Manuscript Ready?</label>
+          <select id="manuscript" name="manuscript">
+            <option value="">Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+
+          <label for="published">Have You Published Before?</label>
+          <select id="published" name="published">
+            <option value="">Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+
+          <label for="booktype">What Type of Book Do You Plan on Publishing?</label>
+          <select id="booktype" name="booktype">
+            <option value="">Select type</option>
+            <option value="business">Business</option>
+            <option value="fiction">Fiction</option>
+            <option value="nonfiction">Non-Fiction</option>
+            <option value="biography">Biography</option>
+            <option value="selfhelp">Self-Help</option>
+          </select>
+
+          <button type="submit" class="cta-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blogs -->
+ <section class="blog-section">
+  <h2>Latest Blog Posts</h2>
+  <div class="blog-container">
+    <a href="#" title="Blog" class="blog-card">
+      <img src="images/blog.webp" alt="Blog Image" title="Blog Image" loading="lazy">
+      <div class="blog-content">
+        <h3>How to Write Your First Bestseller</h3>
+        <span class="blog-date">Oct 27, 2025</span>
+        <p>Discover tips and strategies from top authors to get your first book published successfully.</p>
+      </div>
+    </a>
+
+    
+  </div>
+</section>
+
+
 
 <!-- Footer -->
 
-<footer class="app-footer">
+<footer class="app-footer" style="padding-top: 10px;">
     <div class="footer-top">
 
         <div class="footer-column">

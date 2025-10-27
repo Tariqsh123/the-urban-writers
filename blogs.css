@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.blog-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1 1 350px;
+  border: 1px solid gainsboro;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.733);
+  max-width: 350px;
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+  flex-direction: column;
+  height: 450px;
+  text-decoration: none;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 250px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.733);
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.blog-content {
+    height: 150px;
+    padding: 15px;
+}
+
+.blog-content h3 {
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.blog-date {
+  font-size: 0.9rem;
+  color: #888;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .blog-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-card {
+    max-width: 100%;
+  }
+}

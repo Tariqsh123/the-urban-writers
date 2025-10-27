@@ -3,17 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | The Urban Writers</title>
+  <title>Sitemap | The Urban Writers</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="contact-us.css">
-   <!-- Font Awesome -->
+
+  <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-</head>
+ <style>
+    h1 {
+      text-align: center;
+  font-family: 'Metropolis', sans-serif;
+      margin:  0;
+      font-weight: 300;
+    }
 
+    h2 {
+      background-color: #18bebc;
+      color: #fff;
+      margin: 0px;
+      padding: 10px;
+      font-size: 25px !important;
+  font-family: 'Metropolis', sans-serif;
+      font-weight: 300;
+      border-radius: 8px;
+    }
+
+    .sitemap-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(200px, 1fr));
+      gap: 10px 30px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1200px) {
+      .sitemap-list {
+        grid-template-columns: repeat(3, minmax(180px, 1fr));
+      }
+    }
+
+    @media (max-width: 992px) {
+      .sitemap-list {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+      }
+    }
+
+    @media (max-width: 576px) {
+      .sitemap-list {
+        grid-template-columns: repeat(1, minmax(100%, 1fr));
+      }
+    }
+
+    .sitemap-list li {
+      display: flex;
+      align-items: center;
+    }
+
+    .sitemap-list li::before {
+      content: "✔";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-color: #18bebc;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 24px;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    .sitemap-list a {
+      color: black;
+      text-decoration: none;
+      font-weight:600;
+      font-size:16px;
+      font-family: Roboto, sans-serif;
+      white-space: nowrap;
+    }
+
+    .sitemap-list a:hover {
+      text-decoration: underline;
+    }
+    #sitemap-container {
+    all: unset;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-top: 100px; */
+    padding:  50px;
+    /* padding-top: 150px; */
+    /* margin-top: 50px; */
+}
+  </style>
+</head>
 <body>
- <nav>
+  <nav>
     <div class="nav-left">
       <div class="logo">
         <img src="https://theurbanwriters.com/cdn/shop/files/Dibbly-TheUrbanWriters-LogoLockUp-Circle-1500px_500x.png?v=1704893665" alt="Dibbly Logo" title="Dibbly Logo" loading="lazy">
@@ -136,58 +225,45 @@
     });
   </script>
 
- 
- <!-- Contact Form -->
 
 
-<div class="form-section">
-  <div class="form-image">
-    <img src="images/book-editing-above-footer-image.webp" alt="book-editing-above-footer-image" title="book-editing-above-footer-image" loading="lazy">
-  </div>
-  <div class="form-container">
-    <div class="form-header">
-      <h1>Go ahead - we dare you!</h1>
-      <p>
-        Send a sample of your book and get a free trial edit from several of our amazing editors. 
-        You don't pay until you're happy. Please include as much information as possible: 
-        (genre | budget or service level | estimated length)
-      </p>
-    </div>
+<div class="container" id='sitemap-container'>
+  <h1>SITEMAP OUR AGENCY</h1>
 
-    <form>
-      <div class="left-column">
-        <input type="text" placeholder="Enter your Full Name" required>
-        <input type="email" placeholder="Enter Your Email" required>
-        <input type="tel" placeholder="Enter Your Phone No." required>
-        <input type="text" placeholder="Write Your Book Title" required>
-      </div>
+  <!-- OUR COMPANY Section -->
+  <h2>OUR COMPANY</h2>
+  <ul class="sitemap-list">
+    <li><a href="index.html" title="Home"> Home</a></li>
+    <li><a href="about.html" title="About Us"> About Us</a></li>
+    <li><a href="blogs.html" title="Blogs"> Blogs</a></li>
+    <li><a href="testimonials.html" title="Testimonials"> Testimonials</a></li>
+    <li><a href="faqs.html" title="FAQs"> FAQs</a></li>
+    <li><a href="contact-us.html" title="Contact Us"> Contact Us</a></li>
+    <li><a href="get-started.html" title=" Get Started"> Get Started </a></li>
+    <li><a href="privacy.html" title="Privacy Policy">Privacy Policy </a></li>
+    <li><a href="terms.html" title="Terms & Conditions">Terms & Conditions </a></li>
+  </ul>
 
-      <div class="right-column">
-        <textarea placeholder="Details" required></textarea>
-      </div>
-
-      <select required class="full">
-        <option value="">Select Genre</option>
-        <option value="fiction">Fiction</option>
-        <option value="non-fiction">Non-Fiction</option>
-        <option value="academic">Academic</option>
-        <option value="biography">Biography</option>
-        <option value="children">Children’s Book</option>
-      </select>
-
-      <input type="file" class="full">
-
-      <button type="submit" class="cta-btn full">Submit</button>
-    </form>
-  </div>
+  <!-- SERVICES PAGES Section -->
+  <h2>Services Pages</h2>
+  <ul class="sitemap-list">
+                                <li><a href="audio-book.html" title="Audio Book">Audio Book </a></li>
+                                <li><a href="authors-website.html" title="Authors Website"> Authors Website</a></li>
+                                <li><a href="book-editing.html" title="Book Editing"> Book Editing</a></li>
+                                <li><a href="book-marketing.html" title="Book Marketing"> Book Marketing</a></li>
+                                <li><a href="book-publishing.html" title="Book Publishing"> Book Publishing</a></li>
+                                <li><a href="book-writing.html" title="Book Writing">Book Writing </a></li>
+                                <li><a href="custom-illustration.html" title="Custom Illustration"> Custom Illustration</a></li>
+                                <li><a href="ghost-writing.html" title="Ghost Writing"> Ghost Writing</a></li>
+                                <li><a href="kdp-publishing.html" title="KDP Publishing"> KDP Publishing</a></li>
+                                <li><a href="script-writing.html" title="Script Writing"> Script Writing</a></li>
+  </ul>
 </div>
 
 
- <!-- Contact Form -->
-
 <!-- Footer -->
 
-<footer class="app-footer">
+<footer class="app-footer" style="padding-top: 10px;">
     <div class="footer-top">
 
         <div class="footer-column">

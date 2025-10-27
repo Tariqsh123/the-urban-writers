@@ -4,3 +4,29 @@
 .app-footer{
     padding-top: 10px;
 }
+
+
+.form-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.form-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.form-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.form-container {
+  flex: 1;
+  min-width: 300px;
+}

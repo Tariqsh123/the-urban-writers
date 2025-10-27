@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | The Urban Writers</title>
+  <title>The Urban Writers</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="contact-us.css">
    <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
 </head>
 
 <body>
- <nav>
+  <nav>
     <div class="nav-left">
       <div class="logo">
         <img src="https://theurbanwriters.com/cdn/shop/files/Dibbly-TheUrbanWriters-LogoLockUp-Circle-1500px_500x.png?v=1704893665" alt="Dibbly Logo" title="Dibbly Logo" loading="lazy">
@@ -136,52 +135,191 @@
     });
   </script>
 
- 
- <!-- Contact Form -->
 
 
-<div class="form-section">
-  <div class="form-image">
-    <img src="images/book-editing-above-footer-image.webp" alt="book-editing-above-footer-image" title="book-editing-above-footer-image" loading="lazy">
-  </div>
-  <div class="form-container">
-    <div class="form-header">
-      <h1>Go ahead - we dare you!</h1>
-      <p>
-        Send a sample of your book and get a free trial edit from several of our amazing editors. 
-        You don't pay until you're happy. Please include as much information as possible: 
-        (genre | budget or service level | estimated length)
-      </p>
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-container">
+    <!-- Left Side -->
+    <div class="hero-left">
+  <h1>Your Ideas, Our Expertise. Publish Your Bestseller Faster.</h1>
+  <p>
+    Work with a network of 5,000+ professional writers, editors, and designers to bring your vision to life. Join thousands of satisfied authors today.
+  </p>
+  <a href="contact-us.html" class="cta-btn">Launch Your Project Now</a>
+</div>
+
+
+    <!-- Right Side (Form Section) -->
+    <div class="hero-right">
+      <div class="form-box">
+        <h2>The Best Book Publisher</h2>
+        <h3>Your Partner in Professional Book Publishing Journey</h3>
+        <p class="sub-heading">Sign up and Claim $100 Reward now</p>
+
+        <form action="#">
+          <label for="manuscript">Do You Have a Manuscript Ready?</label>
+          <select id="manuscript" name="manuscript">
+            <option value="">Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+
+          <label for="published">Have You Published Before?</label>
+          <select id="published" name="published">
+            <option value="">Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+
+          <label for="booktype">What Type of Book Do You Plan on Publishing?</label>
+          <select id="booktype" name="booktype">
+            <option value="">Select type</option>
+            <option value="business">Business</option>
+            <option value="fiction">Fiction</option>
+            <option value="nonfiction">Non-Fiction</option>
+            <option value="biography">Biography</option>
+            <option value="selfhelp">Self-Help</option>
+          </select>
+
+          <button type="submit" class="cta-btn">Submit</button>
+        </form>
+      </div>
     </div>
+  </div>
+</section>
 
-    <form>
-      <div class="left-column">
-        <input type="text" placeholder="Enter your Full Name" required>
-        <input type="email" placeholder="Enter Your Email" required>
-        <input type="tel" placeholder="Enter Your Phone No." required>
-        <input type="text" placeholder="Write Your Book Title" required>
-      </div>
 
-      <div class="right-column">
-        <textarea placeholder="Details" required></textarea>
-      </div>
 
-      <select required class="full">
-        <option value="">Select Genre</option>
-        <option value="fiction">Fiction</option>
-        <option value="non-fiction">Non-Fiction</option>
-        <option value="academic">Academic</option>
-        <option value="biography">Biography</option>
-        <option value="children">Children’s Book</option>
-      </select>
 
-      <input type="file" class="full">
+<!-- Faq Section -->
+  <div class="faq-container" style="padding-top: 20px;">
+  <div class="faq-header">
+    <h1>Frequently Asked Questions</h1>
+    <p>Everything you need to know about publishing with The Urban Writers.</p>
+  </div>
 
-      <button type="submit" class="cta-btn full">Submit</button>
-    </form>
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>What services do you offer?</span>
+      <span class="icon">▼</span>
+    </div>
+    <div class="faq-answer">
+      We provide full-service solutions including writing, editing, cover design, formatting, publishing, and marketing to help your book reach its full potential.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>How long does the publishing process take?</span>
+      <span class="icon">▼</span>
+    </div>
+    <div class="faq-answer">
+      The timeline varies based on the services you select and your responsiveness, usually ranging from 4–12 weeks for most projects.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Do I retain the rights to my book?</span>
+      <span class="icon">▼</span>
+    </div>
+    <div class="faq-answer">
+      Absolutely! You keep 100% ownership. We provide guidance and professional services, but your intellectual property always remains yours.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Can I choose my own cover design?</span>
+      <span class="icon">▼</span>
+    </div>
+    <div class="faq-answer">
+      Yes! Our design team works closely with you to craft a cover that perfectly represents your story and appeals to your readers.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Do you help with marketing my book?</span>
+      <span class="icon">▼</span>
+    </div>
+    <div class="faq-answer">
+      Yes, we offer marketing strategies including social media promotion, book listings, and SEO optimization to help your book reach more readers.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Can I publish both digital and print versions?</span>
+      <span class="icon">▼</span>
+    </div>
+    <div class="faq-answer">
+      Definitely! We support eBooks, paperbacks, and hardcover formats, making your book available in both digital and physical forms.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Is there a satisfaction guarantee?</span>
+      <span class="icon">▼</span>
+    </div>
+    <div class="faq-answer">
+      Yes. You only pay when you’re fully satisfied with our editing, design, and publishing services. We strive for 100% client satisfaction.
+    </div>
   </div>
 </div>
 
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+<!-- Faq Section -->
+ 
+ <!-- Contact Form -->
+   <div class="form-container">
+  <div class="form-header">
+    <h1>Go ahead - we dare you!</h1>
+    <p>
+      Send a sample of your book and get a free trial edit from several of our amazing editors. 
+      You don't pay until you're happy. Please include as much information as possible: 
+      (genre | budget or service level | estimated length)
+    </p>
+  </div>
+
+  <form>
+    <div class="left-column">
+      <input type="text" placeholder="Enter your Full Name" required>
+      <input type="email" placeholder="Enter Your Email" required>
+      <input type="tel" placeholder="Enter Your Phone No." required>
+      <input type="text" placeholder="Write Your Book Title" required>
+    </div>
+
+    <div class="right-column">
+      <textarea placeholder="Details" required></textarea>
+    </div>
+
+    <select required class="full">
+      <option value="">Select Genre</option>
+      <option value="fiction">Fiction</option>
+      <option value="non-fiction">Non-Fiction</option>
+      <option value="academic">Academic</option>
+      <option value="biography">Biography</option>
+      <option value="children">Children’s Book</option>
+    </select>
+
+    <input type="file" class="full">
+
+    <button type="submit" class="cta-btn full">Submit</button>
+  </form>
+</div>
 
  <!-- Contact Form -->
 
