@@ -867,14 +867,17 @@ nav {
 
   .home-content-creation-right {
     width: 95%;
+    align-items: center;
   }
 
   .home-content-creation-right p {
     font-size: 16px;
+    text-align: center;
   }
 
   .home-content-creation-right h3 {
-    font-size: 35px;
+    font-size: 30px;
+    text-align: center;
   }
 
   .home-content-creation-right ul li {
@@ -1061,99 +1064,102 @@ nav {
 
 /* Creative Section */
 .creative-main-container {
-  height: fit-content;
   width: 100%;
+  min-height: fit-content;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding: 20px;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  background: #f9fafc;
 }
 
 .creative-main-container h2 {
   font-family: 'Metropolis', sans-serif;
-  font-size: 40px;
-  width: 50%;
+  font-size: 42px;
+  font-weight: 500;
   text-align: center;
-  font-weight: 300;
+  color: #222;
+  width: 100%;
+  max-width: 800px;
+  line-height: 1.3;
 }
 
 .creative-box-container {
-  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
   width: 100%;
   max-width: 1200px;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
 }
 
 .creative-box {
-  height: 320px;
-  width: 90%;
-  max-width: 370px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 30px 25px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 10px;
-  box-shadow: 1px 1px 5px gray;
-  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
 }
 
-.creative-box-top-container {
-  height: 100px;
-  width: 100%;
-  display: flex;
-  gap: 20px;
-  padding: 0 10px;
-  justify-content: center;
-  align-items: center;
+.creative-box:hover {
+  border-color: #18bebc;
+  box-shadow: 0 8px 25px rgba(24, 190, 188, 0.15);
 }
 
 .creative-box-top-container img {
-  height: 50px;
+  height: 60px;
   width: auto;
+  margin-bottom: 20px;
   object-fit: contain;
 }
 
 .creative-box-top-container h3 {
-  font-size: 25px;
-  font-weight: 300;
+  font-size: 22px;
+  font-weight: 500;
   color: #18bebc;
   font-family: 'Metropolis', sans-serif;
-}
-
-.creative-box-bottom-container {
-  height: 220px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 15px;
 }
 
 .creative-box-bottom-container p {
   font-size: 16px;
-  padding-left: 10px;
-  color: grey;
+  line-height: 1.6;
+  color: #666;
+  font-weight: 400;
 }
 
-@media (max-width: 1100px) {
+/* Responsive adjustments */
+@media (max-width: 992px) {
   .creative-main-container h2 {
-    font-size: 35px;
-    width: 90%;
+    font-size: 36px;
   }
-
 }
 
 @media (max-width: 600px) {
+  .creative-main-container {
+    padding: 40px 15px;
+  }
+
   .creative-main-container h2 {
     font-size: 30px;
-    width: 95%;
+  }
+
+  .creative-box {
+    padding: 25px 20px;
+  }
+
+  .creative-box-top-container img {
+    height: 50px;
   }
 }
+
 
 .next-level-main-container {
   width: 100%;
@@ -1514,6 +1520,7 @@ nav {
   font-size: 1.25rem;
   text-align: center;
   margin-bottom: 5px;
+  width: 100%;
 }
 
 .footer-form-card p {
@@ -1767,36 +1774,46 @@ nav {
 }
 
 /* Contact Form */
+/* === Form Container === */
 .form-container {
   max-width: 900px;
   width: 95%;
   margin: 50px auto;
-  padding: 20px 10px;
-  padding-top: 50px;
-  background-color: white;
-  box-shadow: 1px 1px 10px gray;
-  border-radius: 10px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
   margin-bottom: -150px;
   position: relative;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(24, 190, 188, 0.1);
 }
+
+/* === Header === */
 .form-header {
   text-align: center;
   margin-bottom: 30px;
 }
 
 .form-header h1 {
-  font-family: 'Metropolis', sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0;
+  color: #0d3b3a;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .form-header p {
-  margin-top: 10px;
-  font-size: 0.95rem;
-  color: #333;
+  margin-top: 12px;
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: #444;
+  line-height: 1.6;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
 }
 
+/* === Form Grid === */
 .form-container form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1805,7 +1822,7 @@ nav {
   border-radius: 8px;
 }
 
-/* Left and Right Columns */
+/* === Columns === */
 .form-container .left-column,
 .form-container .right-column {
   display: flex;
@@ -1819,18 +1836,20 @@ nav {
   resize: none;
 }
 
-/* Inputs, selects, and textareas */
+/* === Inputs, Selects, Textareas === */
 .form-container input,
 .form-container select,
 .form-container textarea {
   width: 100%;
   padding: 12px 15px;
-  border-radius: 5px;
-  border: 1px solid rgb(206, 206, 206);
-  font-size: 0.95rem;
-  color: #000;
+  border-radius: 6px;
+  border: 1px solid #d5d5d5;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
   background-color: #fff;
-  transition: border 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.03);
 }
 
 .form-container input:focus,
@@ -1838,36 +1857,80 @@ nav {
 .form-container textarea:focus {
   outline: none;
   border-color: #18bebc;
+  box-shadow: 0 0 6px rgba(24, 190, 188, 0.4);
 }
 
-/* Full-width fields below both columns */
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+  color: #999;
+}
+
+/* === Full-width Fields === */
 .form-container .full {
   grid-column: 1 / 3;
 }
 
-/* Button */
+/* === File Upload Field === */
+.form-container input[type="file"] {
+  padding: 12px 15px;
+  border: 2px dashed #18bebc;
+  background-color: #fff;
+  color: #18bebc;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.form-container input[type="file"]::-webkit-file-upload-button {
+  background: #fff;
+  border: 1px solid #18bebc;
+  color: #18bebc;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-container input[type="file"]::-webkit-file-upload-button:hover {
+  background: #18bebc;
+  color: #fff;
+  border-color: #12a3a1;
+  box-shadow: 0 0 10px rgba(24, 190, 188, 0.3);
+}
+
+/* === Button === */
 .form-container .cta-btn {
   width: 100%;
   padding: 14px;
-  background-color: #18bebc;
+  background: linear-gradient(90deg, #18bebc, #12a3a1);
   color: white;
   font-weight: 600;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-size: 1rem;
-  transition: background 0.3s ease, transform 0.2s ease;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 15px rgba(24, 190, 188, 0.25);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-container .cta-btn:hover {
-  background-color: #12a3a1;
-  transform: translateY(-2px);
+  background: linear-gradient(90deg, #12a3a1, #0f8d8b);
+  box-shadow: 0 4px 18px rgba(24, 190, 188, 0.35);
 }
 
-/* Responsive */
+/* === Responsive === */
 @media (max-width: 700px) {
+  .form-container {
+    padding: 10px;
+  }
   .form-container form {
     grid-template-columns: 1fr;
+    padding: 0;
   }
 
   .form-container .full {
@@ -1885,4 +1948,7 @@ nav {
   .right-column textarea {
     min-height: 150px;
   }
+  .form-container input[type="file"] {
+    padding: 10px;
+    font-size: small;}
 }
