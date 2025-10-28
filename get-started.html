@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Get Started | The Urban Writers</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="services.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="contact-us.css">
+  <link rel="stylesheet" href="get-started.css">
    <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -98,7 +100,7 @@
       </li>
 
       <li><a href="blogs.html" title="Blog">Blog</a></li>
-      <li><a href="testimonials.html" title="Testimonialss">Testimonialss</a></li>
+      <li><a href="testimonials.html" title="Testimonials">Testimonials</a></li>
 
       <!-- <li class="mobile-dropdown">
         <a href="#">Let's Chat</a>
@@ -141,6 +143,11 @@
     });
   </script>
 
+
+<!-- Get Started -->
+
+
+
  
  <!-- Contact Form -->
 
@@ -151,7 +158,7 @@
   </div> -->
   <div class="form-container">
     <div class="form-header">
-      <h1>Go ahead - we dare you!</h1>
+      <h1>Submit Your Manuscript!</h1>
       <p>
         Send a sample of your book and get a free trial edit from several of our amazing editors. 
         You don't pay until you're happy. Please include as much information as possible: 
@@ -160,35 +167,155 @@
     </div>
 
     <form>
-      <div class="left-column">
-        <input type="text" placeholder="Enter your Full Name" required>
-        <input type="email" placeholder="Enter Your Email" required>
-        <input type="tel" placeholder="Enter Your Phone No." required>
-        <input type="text" placeholder="Write Your Book Title" required>
-      </div>
+    <div class="left-column">
+      <input type="text" placeholder="Enter your Full Name" required>
+      <input type="email" placeholder="Enter Your Email" required>
+      <input type="tel" placeholder="Enter Your Phone No." required>
 
-      <div class="right-column">
-        <textarea placeholder="Details" required></textarea>
-      </div>
-
-      <select required class="full">
-        <option value="">Select Genre</option>
-        <option value="fiction">Fiction</option>
-        <option value="non-fiction">Non-Fiction</option>
-        <option value="academic">Academic</option>
-        <option value="biography">Biography</option>
-        <option value="children">Children’s Book</option>
+      <!-- New Budget Field -->
+      <select required>
+        <option value="">What is your estimated budget?</option>
+        <option value="500-800">$500 - $800</option>
+        <option value="800-1200">$800 - $1200</option>
+        <option value="1200-2000">$1200 - $2000</option>
       </select>
 
-      <input type="file" class="full">
+      <input type="text" placeholder="Write Your Book Title" required>
+    </div>
 
-      <button type="submit" class="cta-btn full">Submit</button>
-    </form>
+    <div class="right-column">
+      <textarea placeholder="Details" required></textarea>
+    </div>
+
+    <select required class="full">
+      <option value="">Select Genre</option>
+                <option value="Action-Adventure">Action-Adventure</option>
+                <option value="Celebrity Biographies">Celebrity Biographies</option>
+                <option value="Classical Drama">Classical Drama</option>
+                <option value="Comparative Religion">Comparative Religion</option>
+                <option value="Contemporary Romance">Contemporary Romance</option>
+                <option value="Cookbooks">Cookbooks</option>
+                <option value="Crime">Crime</option>
+                <option value="Cyberpunk">Cyberpunk</option>
+                <option value="Dystopian">Dystopian</option>
+                <option value="Fairy Tale Retellings">Fairy Tale Retellings</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Gothic Horror">Gothic Horror</option>
+                <option value="Historical Fiction">Historical Fiction</option>
+                <option value="Historical Romance">Historical Romance</option>
+                <option value="Horror">Horror</option>
+                <option value="Literary Fiction">Literary Fiction</option>
+                <option value="Manga">Manga</option>
+                <option value="Memoir">Memoir</option>
+                <option value="Motivational">Motivational</option>
+                <option value="Mystery/Thriller">Mystery/Thriller</option>
+                <option value="Paranormal">Paranormal</option>
+                <option value="Personal Development">Personal Development</option>
+                <option value="Philosophy">Philosophy</option>
+                <option value="Picture Books">Picture Books</option>
+                <option value="Political Biographies">Political Biographies</option>
+                <option value="Psychological Horror">Psychological Horror</option>
+                <option value="Psychological Thriller">Psychological Thriller</option>
+                <option value="Psychology">Psychology</option>
+                <option value="Religion/Spirituality">Religion/Spirituality</option>
+                <option value="Romance">Romance</option>
+                <option value="Science Fiction">Science Fiction</option>
+                <option value="Self-Help">Self-Help</option>
+                <option value="Slam Poetry">Slam Poetry</option>
+                <option value="Spiritual Guides">Spiritual Guides</option>
+                <option value="Superhero Comics">Superhero Comics</option>
+                <option value="Survival">Survival</option>
+                <option value="Suspense">Suspense</option>
+                <option value="Traditional Poetry">Traditional Poetry</option>
+                <option value="Travel">Travel</option>
+                <option value="Urban Fantasy">Urban Fantasy</option>
+                <option value="Other">Other</option>
+    </select>
+
+    <input type="file" class="full">
+
+    <button type="submit" class="cta-btn full">Submit</button>
+  </form>
   </div>
 </div>
 
 
  <!-- Contact Form -->
+<section class="submission-guide">
+  <div class="container">
+    <div class="guide-header">
+      <h2>Submission Guide</h2>
+      <p>
+        Follow these quick and easy steps to send your book sample to <strong>The Urban Writers</strong> for a free trial edit.  
+        Our editorial team will carefully review your submission and get back to you within 48 hours.
+      </p>
+    </div>
+
+    <div class="guide-steps">
+
+      <div class="step">
+        <div class="step-number">01</div>
+        <div class="step-content">
+          <h3>Fill Out the Form</h3>
+          <p>
+            Enter your full name, email address, and phone number so we can reach you with updates and editor feedback.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+        <div class="step-content">
+          <h3>Provide Book Information</h3>
+          <p>
+            Add your book title, choose the correct genre, and describe your project — including tone, target audience, or any special requirements.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <div class="step-content">
+          <h3>Upload Your Sample</h3>
+          <p>
+            Attach a short sample of your manuscript. This helps our editors assess your writing style and assign the best match for your book.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">04</div>
+        <div class="step-content">
+          <h3>Submit for Review</h3>
+          <p>
+            Once submitted, our editors will review your sample within <strong>48 hours</strong> and send back a professionally edited excerpt — completely free.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">05</div>
+        <div class="step-content">
+          <h3>Review & Decide</h3>
+          <p>
+            Take your time to review the free sample edit. You’ll only proceed and pay once you’re completely satisfied with our work.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="guide-footer">
+      <p>
+        At <strong>The Urban Writers</strong>, transparency and trust are key.  
+        You get to experience our editing quality before committing — no hidden fees, no pressure.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
 
 <!-- Footer -->
 

@@ -854,6 +854,7 @@ nav {
   .home-content-creation {
     height: fit-content;
     flex-direction: column;
+    margin-bottom: 50px;
   }
 
   .home-content-creation-left {

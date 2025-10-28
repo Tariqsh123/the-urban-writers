@@ -97,7 +97,7 @@
       </li>
 
       <li><a href="blogs.html" title="Blog">Blog</a></li>
-      <li><a href="testimonials.html" title="Testimonialss">Testimonialss</a></li>
+      <li><a href="testimonials.html" title="Testimonials">Testimonials</a></li>
 
       <!-- <li class="mobile-dropdown">
         <a href="#">Let's Chat</a>
@@ -150,7 +150,7 @@
       Publish your book on Amazon Kindle Direct Publishing with ease and confidence. 
       Our expert team assists you with formatting, cover design, and listing optimization to ensure your book stands out and reaches a global audience.
     </p>
-    <a href="contact-us.html" title="Contact Us " class="cta-btn">Publish Your Book on KDP</a>
+    <a href="get-started.html" title="get-started " class="cta-btn">Publish Your Book on KDP</a>
   </div>
 
   <div class="services-right">
@@ -393,7 +393,7 @@
         From flawless formatting and custom cover design to Amazon optimization and marketing, 
         we make your self-publishing journey smooth, fast, and completely hassle-free.
       </p>
-      <a href="contact-us.html" class="cta-btn" title="Contact Page">Publish Your Book Now</a>
+      <a href="get-started.html" class="cta-btn" title="get-started">Publish Your Book Now</a>
     </div>
   </div>
 </section>
@@ -477,7 +477,7 @@
     </div>
     <!-- end -->
   </div>
-  <a href="contact-us.html" title="Contact Us" class="cta-btn">Start Your KDP Publishing</a>
+  <a href="get-started.html" title="get-started" class="cta-btn">Start Your KDP Publishing</a>
 </div>
 
 
@@ -704,7 +704,7 @@ $(function(){
       <li>Optimize your book’s metadata to boost Amazon search visibility</li>
       <li>Launch your book confidently with a complete marketing and pricing strategy</li>
     </ul>
-    <a href="contact-us.html" title="Contact us" class="cta-btn">Explore KDP Services</a>
+    <a href="get-started.html" title="get-started" class="cta-btn">Explore KDP Services</a>
   </div>
 </div>
 
@@ -798,6 +798,15 @@ $(function(){
       <input type="text" placeholder="Enter your Full Name" required>
       <input type="email" placeholder="Enter Your Email" required>
       <input type="tel" placeholder="Enter Your Phone No." required>
+
+      <!-- New Budget Field -->
+      <select required>
+        <option value="">What is your estimated budget?</option>
+        <option value="500-800">$500 - $800</option>
+        <option value="800-1200">$800 - $1200</option>
+        <option value="1200-2000">$1200 - $2000</option>
+      </select>
+
       <input type="text" placeholder="Write Your Book Title" required>
     </div>
 
@@ -807,11 +816,47 @@ $(function(){
 
     <select required class="full">
       <option value="">Select Genre</option>
-      <option value="fiction">Fiction</option>
-      <option value="non-fiction">Non-Fiction</option>
-      <option value="academic">Academic</option>
-      <option value="biography">Biography</option>
-      <option value="children">Children’s Book</option>
+                <option value="Action-Adventure">Action-Adventure</option>
+                <option value="Celebrity Biographies">Celebrity Biographies</option>
+                <option value="Classical Drama">Classical Drama</option>
+                <option value="Comparative Religion">Comparative Religion</option>
+                <option value="Contemporary Romance">Contemporary Romance</option>
+                <option value="Cookbooks">Cookbooks</option>
+                <option value="Crime">Crime</option>
+                <option value="Cyberpunk">Cyberpunk</option>
+                <option value="Dystopian">Dystopian</option>
+                <option value="Fairy Tale Retellings">Fairy Tale Retellings</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Gothic Horror">Gothic Horror</option>
+                <option value="Historical Fiction">Historical Fiction</option>
+                <option value="Historical Romance">Historical Romance</option>
+                <option value="Horror">Horror</option>
+                <option value="Literary Fiction">Literary Fiction</option>
+                <option value="Manga">Manga</option>
+                <option value="Memoir">Memoir</option>
+                <option value="Motivational">Motivational</option>
+                <option value="Mystery/Thriller">Mystery/Thriller</option>
+                <option value="Paranormal">Paranormal</option>
+                <option value="Personal Development">Personal Development</option>
+                <option value="Philosophy">Philosophy</option>
+                <option value="Picture Books">Picture Books</option>
+                <option value="Political Biographies">Political Biographies</option>
+                <option value="Psychological Horror">Psychological Horror</option>
+                <option value="Psychological Thriller">Psychological Thriller</option>
+                <option value="Psychology">Psychology</option>
+                <option value="Religion/Spirituality">Religion/Spirituality</option>
+                <option value="Romance">Romance</option>
+                <option value="Science Fiction">Science Fiction</option>
+                <option value="Self-Help">Self-Help</option>
+                <option value="Slam Poetry">Slam Poetry</option>
+                <option value="Spiritual Guides">Spiritual Guides</option>
+                <option value="Superhero Comics">Superhero Comics</option>
+                <option value="Survival">Survival</option>
+                <option value="Suspense">Suspense</option>
+                <option value="Traditional Poetry">Traditional Poetry</option>
+                <option value="Travel">Travel</option>
+                <option value="Urban Fantasy">Urban Fantasy</option>
+                <option value="Other">Other</option>
     </select>
 
     <input type="file" class="full">
