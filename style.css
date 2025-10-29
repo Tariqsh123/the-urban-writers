@@ -1025,7 +1025,7 @@ nav {
 }
 
 .swiper-slide-active img {
-  transform: scale(1.05);
+  transform: scale(1);
   filter: blur(0);
 }
 
@@ -1366,7 +1366,8 @@ nav {
 
 .review-heading-container {
   max-width: 800px;
-  margin: 50px auto;
+  margin: 20px auto;
+  margin-top: 0;
 }
 
 .review-heading-span {
@@ -2156,5 +2157,77 @@ nav {
 .home-service-after-nav-heading {
     text-align: center;
     font-size: 35px;
+}
+}
+
+
+/* Pain Points & Desire Section */
+/* Section Styling */
+#desire-and-pain-section {
+  background-color: #f9f9f9;
+  padding: 0px 20px;
+}
+
+/* Container */
+.desire-and-pain-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 1200px; */
+  width: 100%;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Image Styling */
+.desire-and-pain-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styling */
+.desire-and-pain-text {
+  width: 50%;
+  height: fit-content;
+}
+
+.desire-and-pain-heading {
+  font-family: 'Metropolis', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.desire-and-pain-paragraph {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Responsive: Stack on Mobile */
+@media (max-width: 768px) {
+  .desire-and-pain-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .desire-and-pain-image img {
+  width: 100%;
+}
+
+.desire-and-pain-text {
+    padding: 20px 0 0 0;
+  width: 100%;
+}
+
+  .desire-and-pain-heading {
+  font-family: 'Metropolis', sans-serif;
+  font-size: 30px;
+}
+
+.desire-and-pain-paragraph {
+  font-size: 14px;
 }
 }
