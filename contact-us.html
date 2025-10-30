@@ -144,11 +144,43 @@
  
  <!-- Contact Form -->
 
+<section id="info-section" class="info-section">
+  <div class="info-container">
+    <div id="info-address" class="info-box">
+      <span class="info-icon"><i class="fas fa-map-marker-alt"></i></span>
+      <div class="info-content">
+        <h4 class="info-title">Our Address</h4>
+        <p class="info-text">Random City , Uk</p>
+      </div>
+    </div>
 
-<div class="form-section">
-  <div class="form-image">
-    <img src="images/book-editing-above-footer-image.webp" alt="book-editing-above-footer-image" title="book-editing-above-footer-image" loading="lazy">
+    <div id="info-phone" class="info-box">
+      <span class="info-icon"><i class="fas fa-phone-alt"></i></span>
+      <div class="info-content">
+        <h4 class="info-title">Call Us</h4>
+        <p class="info-text">+442 04125637</p>
+      </div>
+    </div>
+
+    <div id="info-email" class="info-box">
+      <span class="info-icon"><i class="fas fa-envelope"></i></span>
+      <div class="info-content">
+        <h4 class="info-title">Email</h4>
+        <p class="info-text">theurbanpublishers.com.uk</p>
+      </div>
+    </div>
+
+    <!-- <div id="info-hours" class="info-box">
+      <span class="info-icon"><i class="fas fa-clock"></i></span>
+      <div class="info-content">
+        <h4 class="info-title">Working Hours</h4>
+        <p class="info-text">Mon - Fri: 9:00 AM - 6:00 PM</p>
+      </div>
+    </div> -->
   </div>
+</section>
+
+
   <div class="form-container">
     <div class="form-header">
       <h1>Go ahead - we dare you!</h1>
@@ -230,10 +262,103 @@
     <button type="submit" class="cta-btn full">Submit</button>
   </form>
   </div>
-</div>
 
 
  <!-- Contact Form -->
+
+
+ 
+
+<!-- Faq Section -->
+  <div class="faq-container" style="padding-top: 20px;">
+  <div class="faq-header">
+    <h1>Frequently Asked Questions</h1>
+    <p>Everything you need to know about publishing with The Urban Writers.</p>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>What services do you offer?</span>
+      <span class="icon">▼</span>
+    </div>
+    <div class="faq-answer">
+      We provide full-service solutions including writing, editing, cover design, formatting, publishing, and marketing to help your book reach its full potential.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>How long does the publishing process take?</span>
+      <span class="icon">▼</span>
+    </div>
+    <div class="faq-answer">
+      The timeline varies based on the services you select and your responsiveness, usually ranging from 4–12 weeks for most projects.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Do I retain the rights to my book?</span>
+      <span class="icon">▼</span>
+    </div>
+    <div class="faq-answer">
+      Absolutely! You keep 100% ownership. We provide guidance and professional services, but your intellectual property always remains yours.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Can I choose my own cover design?</span>
+      <span class="icon">▼</span>
+    </div>
+    <div class="faq-answer">
+      Yes! Our design team works closely with you to craft a cover that perfectly represents your story and appeals to your readers.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Do you help with marketing my book?</span>
+      <span class="icon">▼</span>
+    </div>
+    <div class="faq-answer">
+      Yes, we offer marketing strategies including social media promotion, book listings, and SEO optimization to help your book reach more readers.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Can I publish both digital and print versions?</span>
+      <span class="icon">▼</span>
+    </div>
+    <div class="faq-answer">
+      Definitely! We support eBooks, paperbacks, and hardcover formats, making your book available in both digital and physical forms.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Is there a satisfaction guarantee?</span>
+      <span class="icon">▼</span>
+    </div>
+    <div class="faq-answer">
+      Yes. You only pay when you’re fully satisfied with our editing, design, and publishing services. We strive for 100% client satisfaction.
+    </div>
+  </div>
+</div>
+
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+<!-- Faq Section -->
 
 <!-- Footer -->
 

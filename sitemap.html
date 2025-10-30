@@ -16,94 +16,119 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
  <style>
-    h1 {
-      text-align: center;
+   /* Container */
+#sitemap-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 15px;
   font-family: 'Metropolis', sans-serif;
-      margin:  0;
-      font-weight: 300;
-    }
-
-    h2 {
-      background-color: #18bebc;
-      color: #fff;
-      margin: 0px;
-      padding: 10px;
-      font-size: 25px !important;
-  font-family: 'Metropolis', sans-serif;
-      font-weight: 300;
-      border-radius: 8px;
-    }
-
-    .sitemap-list {
-      list-style: none;
-      padding-left: 0;
-      margin-top: 20px;
-      display: grid;
-      grid-template-columns: repeat(4, minmax(200px, 1fr));
-      gap: 10px 30px;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 1200px) {
-      .sitemap-list {
-        grid-template-columns: repeat(3, minmax(180px, 1fr));
-      }
-    }
-
-    @media (max-width: 992px) {
-      .sitemap-list {
-        grid-template-columns: repeat(2, minmax(150px, 1fr));
-      }
-    }
-
-    @media (max-width: 576px) {
-      .sitemap-list {
-        grid-template-columns: repeat(1, minmax(100%, 1fr));
-      }
-    }
-
-    .sitemap-list li {
-      display: flex;
-      align-items: center;
-    }
-
-    .sitemap-list li::before {
-      content: "✔";
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      background-color: #18bebc;
-      color: #fff;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 24px;
-      margin-right: 10px;
-      flex-shrink: 0;
-    }
-
-    .sitemap-list a {
-      color: black;
-      text-decoration: none;
-      font-weight:600;
-      font-size:16px;
-      font-family: Roboto, sans-serif;
-      white-space: nowrap;
-    }
-
-    .sitemap-list a:hover {
-      text-decoration: underline;
-    }
-    #sitemap-container {
-    all: unset;
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* padding-top: 100px; */
-    padding:  50px;
-    /* padding-top: 150px; */
-    /* margin-top: 50px; */
 }
+
+/* Main Heading */
+#sitemap-container h1 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 60px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#sitemap-container h1::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 3px;
+  background-color: #18bebc;
+  border-radius: 2px;
+}
+
+/* Section Headings */
+#sitemap-container h2 {
+  background: none;
+  color: #18bebc;
+  margin: 40px 0 25px 0;
+  padding: 0;
+  font-size: 24px !important;
+  font-weight: 700;
+  border-left: 5px solid #18bebc;
+  padding-left: 15px;
+  border-radius: 0;
+}
+
+/* Sitemap List */
+.sitemap-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px 30px;
+}
+
+/* List Items */
+.sitemap-list li {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.sitemap-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+/* Font Awesome Icons */
+.sitemap-list li i {
+  font-size: 18px;
+  color: #18bebc;
+  transition: color 0.3s ease;
+}
+
+/* Text Links */
+.sitemap-list a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect — Both icon + text */
+.sitemap-list li:hover i,
+.sitemap-list li:hover a {
+  color: #0f908d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #sitemap-container h1 {
+    font-size: 30px;
+  }
+
+  #sitemap-container h2 {
+    font-size: 20px !important;
+  }
+
+  .sitemap-list li {
+    padding: 14px 16px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -231,38 +256,41 @@
   </script>
 
 
-
-<div class="container" id='sitemap-container'>
-  <h1>SITEMAP OUR AGENCY</h1>
+<div class="container" id="sitemap-container">
+  <h1 class="sitemap-heading">Sitemap - Our Agency</h1>
 
   <!-- OUR COMPANY Section -->
-  <h2>OUR COMPANY</h2>
-  <ul class="sitemap-list">
-    <li><a href="index.html" title="Home"> Home</a></li>
-    <li><a href="about.html" title="About Us"> About Us</a></li>
-    <li><a href="blogs.html" title="Blogs"> Blogs</a></li>
-    <li><a href="testimonials.html" title="Testimonials"> Testimonials</a></li>
-    <li><a href="faqs.html" title="FAQs"> FAQs</a></li>
-    <li><a href="contact-us.html" title="Contact Us"> Contact Us</a></li>
-    <li><a href="get-started.html" title=" Get Started"> Get Started </a></li>
-    <li><a href="privacy.html" title="Privacy Policy">Privacy Policy </a></li>
-    <li><a href="terms.html" title="Terms & Conditions">Terms & Conditions </a></li>
-  </ul>
+  <div class="sitemap-section">
+    <h2 class="sitemap-section-title">Our Company</h2>
+    <ul class="sitemap-list">
+      <li><a href="index.html" title="Home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html" title="About Us"><i class="fas fa-info-circle"></i> About Us</a></li>
+      <li><a href="blogs.html" title="Blogs"><i class="fas fa-blog"></i> Blogs</a></li>
+      <li><a href="testimonials.html" title="Testimonials"><i class="fas fa-comments"></i> Testimonials</a></li>
+      <li><a href="faqs.html" title="FAQs"><i class="fas fa-question-circle"></i> FAQs</a></li>
+      <li><a href="contact-us.html" title="Contact Us"><i class="fas fa-envelope"></i> Contact Us</a></li>
+      <li><a href="get-started.html" title="Get Started"><i class="fas fa-rocket"></i> Get Started</a></li>
+      <li><a href="privacy.html" title="Privacy Policy"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+      <li><a href="terms.html" title="Terms & Conditions"><i class="fas fa-file-contract"></i> Terms & Conditions</a></li>
+    </ul>
+  </div>
 
   <!-- SERVICES PAGES Section -->
-  <h2>Services Pages</h2>
-  <ul class="sitemap-list">
-                                <li><a href="audio-book.html" title="Audio Book">Audio Book </a></li>
-                                <li><a href="authors-website.html" title="Authors Website"> Authors Website</a></li>
-                                <li><a href="book-editing.html" title="Book Editing"> Book Editing</a></li>
-                                <li><a href="book-marketing.html" title="Book Marketing"> Book Marketing</a></li>
-                                <li><a href="book-publishing.html" title="Book Publishing"> Book Publishing</a></li>
-                                <li><a href="book-writing.html" title="Book Writing">Book Writing </a></li>
-                                <li><a href="custom-illustration.html" title="Custom Illustration"> Custom Illustration</a></li>
-                                <li><a href="ghost-writing.html" title="Ghost Writing"> Ghost Writing</a></li>
-                                <li><a href="kdp-publishing.html" title="KDP Publishing"> KDP Publishing</a></li>
-                                <li><a href="script-writing.html" title="Script Writing"> Script Writing</a></li>
-  </ul>
+  <div class="sitemap-section">
+    <h2 class="sitemap-section-title">Services Pages</h2>
+    <ul class="sitemap-list">
+      <li><a href="audio-book.html" title="Audio Book"><i class="fas fa-headphones"></i> Audio Book</a></li>
+      <li><a href="authors-website.html" title="Authors Website"><i class="fas fa-user-edit"></i> Authors Website</a></li>
+      <li><a href="book-editing.html" title="Book Editing"><i class="fas fa-edit"></i> Book Editing</a></li>
+      <li><a href="book-marketing.html" title="Book Marketing"><i class="fas fa-bullhorn"></i> Book Marketing</a></li>
+      <li><a href="book-publishing.html" title="Book Publishing"><i class="fas fa-book"></i> Book Publishing</a></li>
+      <li><a href="book-writing.html" title="Book Writing"><i class="fas fa-pen-nib"></i> Book Writing</a></li>
+      <li><a href="custom-illustration.html" title="Custom Illustration"><i class="fas fa-paint-brush"></i> Custom Illustration</a></li>
+      <li><a href="ghost-writing.html" title="Ghost Writing"><i class="fas fa-user-secret"></i> Ghost Writing</a></li>
+      <li><a href="kdp-publishing.html" title="KDP Publishing"><i class="fas fa-book-reader"></i> KDP Publishing</a></li>
+      <li><a href="script-writing.html" title="Script Writing"><i class="fas fa-file-alt"></i> Script Writing</a></li>
+    </ul>
+  </div>
 </div>
 
 
